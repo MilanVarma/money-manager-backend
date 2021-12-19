@@ -8,7 +8,7 @@ import {expenseRouter} from './routes/Expenses.js'
 dotenv.config()
 const app = express()
 const MONGO_URL = process.env.MONGO_URL;
-const PORT = 9000 || process.env.PORT;
+const PORT = process.env.PORT || 9000;
 
 app.use(express.json())
 app.use(cors())
